@@ -1,0 +1,11 @@
+a. Review trends in algorithm(s) performance to see at which point making trades becomes +ev
+    (a) Note that different models may do better at different parts of the game
+    (b) At later part of the game maybe good idea to ensemble several models / maybe ensemble is best all the time???
+2. Choose the strategy - what algorithm / ensemble and when do we start trading etc.
+
+1. Run the chosen strategy on historical data to see what happens (should do very well here since we are probably cheating on start)
+
+1. Submit and see how chosen strategy does on hidden data sets
+
+Note the main trade off in this game is start trading early vs. wait for more info - keep in mind bankroll is compounding
+    This is kinda of like playing a strategy game - build city vs. built units to expand early - need to strike a balance
