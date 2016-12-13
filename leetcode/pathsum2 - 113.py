@@ -71,7 +71,7 @@ class Solution(object):
                 return
             if node.val[1] == sum and node.left == None and node.right == None:
                 solution.append(node.val[0])
-                # node.val = None
+                node.val = (float("inf"), float("inf"))
                 return True
             # try:
             # if ((node.left == None))  and ((node.right == None) or isinstance(node.right.val, tuple)):
@@ -119,8 +119,8 @@ class Solution(object):
 
 a = Solution()
 # trlst = '[5,4,8,11,None,13,4,7,2,None,None,5,1]'
-trlst = '[1,-2,-3,1,3,-2,null,-1]'
+# trlst = '[1,-2,-3,1,3,-2,null,-1]'
 # trlst = '[1,0,1,1,2,0,-1,0,1,-1,0,-1,0,1,0]'
-# trlst = '[0,1,1]'
+trlst = '[0,1,1]'
 tree = list2tree(trlst)
-print(a.pathSum(tree, 2))
+print(a.pathSum(tree, 1))
