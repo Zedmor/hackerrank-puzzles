@@ -56,7 +56,7 @@ class Solution(object):
         solution = []
         for word in words:
 
-            maxY = len(board)
+            maxY =len(board)
             for i in range(maxY):
 
                 if type(board[i]) == str:
