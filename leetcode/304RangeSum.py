@@ -30,37 +30,47 @@ class NumMatrix(object):
         self.matrix = matrix
         if matrix:
             self.x = len(matrix[0])
+        else:
+            self.x = 0
         self.y = len(matrix)
-        # Create hashtable
-
-
 
         self.hashsum = {}
         self.hashsum_byrow = {}
         self.hashsum_bycol = {}
 
-        for i in range(self.y):
-            for j in range(self.x + 1):
-                for k in range(j + 1):
-                    self.hashsum_byrow[(i, k, j)] = sum(self.matrix[i][k:j])
-        print(self.hashsum_byrow)
-
-        for i in range(self.y):
-            for j in range(self.x + 1):
-                for k in range(j + 1):
-                    self.hashsum_byrow[(i, k, j)] = sum(
-                        self.matrix[i][k:j])
-
+    def buildhash(self, row1, row2, col1, col2):
+        # Create hashtable
+        for i in range(row1, row2+1):
+            for j in range(col1, col2+1):
+                inter_sum = sum(self.matrix[i][col1:j + 1])
+                for k in range(col1, j + 1):
+                    self.hashsum_byrow[(i, k, j)] = inter_sum
+                    inter_sum -= self.matrix[i][k]
         # print(self.hashsum_byrow)
-        for i in range(-1, self.y):
-            for m in range(i + 1):
-                for j in range(-1, self.x):
-                    for k in range(j + 1):
-                        self.hashsum[(m, i, k, j)] = sum([
-                                                             self.hashsum_byrow[
-                                                                 row, k, j + 1]
-                                                             for row in
-                                                             range(m, i + 1)])
+        #
+        # for i in range(self.x):
+        #     for j in range(self.y):
+        #         for k in range(j + 1):
+        #             inter_sum = 0
+        #             for z in range(k,j+1):
+        #                 inter_sum+= self.matrix[z][i]
+        #             self.hashsum_bycol[(i, k, j)] = inter_sum
+
+        # print(self.hashsum_bycol)
+
+        # # print(self.hashsum_byrow)
+        for j in range(col1, col2+1):
+            for k in range(col1,j + 1):
+                for i in range(row1, row2+1):
+                    inter_sum = sum([
+                                        self.hashsum_byrow[
+                                            row, k, j]
+                                        for row in
+                                        range(row1,i + 1)])
+                    for m in range(row1, i + 1):
+                        self.hashsum[(m, i, k, j)] = inter_sum
+                        inter_sum -= self.hashsum_byrow[
+                            m, k, j]
 
     def sumRegion(self, row1, col1, row2, col2):
         """
@@ -70,6 +80,7 @@ class NumMatrix(object):
         :type col2: int
         :rtype: int
         """
+        self.buildhash(row1, row2, col1, col2)
         return self.hashsum[row1, row2, col1, col2]
 
 

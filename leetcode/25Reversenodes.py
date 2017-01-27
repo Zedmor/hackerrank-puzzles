@@ -35,49 +35,30 @@ class Solution(object):
         :type k: int
         :rtype: ListNode
         """
+        def reverserecur(head, k):
+            currNode = head
+            nextNode = None
+            prevNode = None
+            iterator = 0
+            while currNode and iterator < k:
+                nextNode = currNode.next
+                currNode.next = prevNode
+                prevNode = currNode
+                currNode = nextNode
+                iterator += 1
+            if not currNode and iterator < k:
+                # разверни и верни!
+                head.next = nextNode
+                head = prevNode
+                return reverserecur(head, iterator)
+            if not nextNode:
+                return prevNode
+            head.next = reverserecur(nextNode, k)
+            head = prevNode
+            return head
+        if head:
+            return reverserecur(head, k)
 
-        def swap(node, counter):
-            if node and node.next and counter > 0:
-                # node.next, node2.next = node2.next, node.next
-                listhead = node
-                for i in range(counter):
-                    head = node.next
-
-                head.next = swap(head, counter - 1)
-                return listhead
-                # backup = node
-                # node.next = swap(node.next, counter-1)
-                # node.next = backup
-                # return node
-                # node.next = swap(node.next, counter - 1)
-                # return node
-                # nodex.next, node.next = node.next, nodex.next
-                # node2.next = node
-                # swap(node2 , node2.next, counter-1)
-            if counter == 0:
-                backup = node
-                # node.next =
-                return node.next
-
-                # if node:
-                #     return None
-
-                # pointers = [0] * k
-                # backup = head
-                # head = swap(head, k-1)
-                # print(head)
-
-
-                # pointers[i] = head.next
-
-        # print(pointers)
-        while k > 0:
-            pointer = head
-            for i in range(k):
-                pointer = pointer.next
-
-
-            printlist(head)
 
 
 def createlist(array):
@@ -86,7 +67,6 @@ def createlist(array):
     for element in reversed(array):
         if list:
             new_node = ListNode(element, list)
-            # new_node.next = list
             list = new_node
         else:
             list = ListNode(element)
@@ -102,6 +82,6 @@ def printlist(head):
 
 a = Solution()
 
-list = createlist([1, 2, 3, 4, 5, 6, 7])
+list = createlist([1,2,3,4,5])
 # printlist(list)
-print(a.reverseKGroup(list, 5))
+print(a.reverseKGroup(list, 2))
