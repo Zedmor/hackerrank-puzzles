@@ -46,19 +46,7 @@ class NumMatrix(object):
                 for k in range(col1, j + 1):
                     self.hashsum_byrow[(i, k, j)] = inter_sum
                     inter_sum -= self.matrix[i][k]
-        # print(self.hashsum_byrow)
-        #
-        # for i in range(self.x):
-        #     for j in range(self.y):
-        #         for k in range(j + 1):
-        #             inter_sum = 0
-        #             for z in range(k,j+1):
-        #                 inter_sum+= self.matrix[z][i]
-        #             self.hashsum_bycol[(i, k, j)] = inter_sum
 
-        # print(self.hashsum_bycol)
-
-        # # print(self.hashsum_byrow)
         for j in range(col1, col2+1):
             for k in range(col1,j + 1):
                 for i in range(row1, row2+1):
