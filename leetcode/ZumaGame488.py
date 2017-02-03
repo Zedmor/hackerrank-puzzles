@@ -41,7 +41,7 @@ class Node(object):
 class Board(object):
     def __init__(self, position):
         self.board = position
-        #self.clearboard()
+        # self.clearboard()
 
     def __str__(self):
         return self.getPosition()
@@ -49,25 +49,33 @@ class Board(object):
     def getPosition(self):
         return self.board
 
-    def clearboard(self):
+    def clearboard(self):g
         i = 0
+        i2 = 3
         while len(self.board) > 2 and i < len(self.board) - 2:
-            while len(set(self.board[i:i + 3])) == 1 and len(
-                    self.board[i:i + 3]) == 3:
-                self.board = self.board[:i] + self.board[i + 3:]
+            while len(set(self.board[i:i + i2])) == 1 and i + i2 < len(
+                    self.board) + 1:
+                i2 += 1
+            if len(set(self.board[i:i + i2 - 1])) == 1 and i + i2 - 1 < len(
+                    self.board) + 1 and i2 > 3:
+                i2 -= 1
+                self.board = self.board[:i] + self.board[i + i2:]
                 i = max(-1, i - 4)
+                i2 = 3
             i += 1
 
     def insertMarble(self, marble, index):
         assert index < len(self.board) + 1
         self.board = self.board[:index] + marble + self.board[index:]
+        # testbrd = self.board[index-2:min(index+3, len(self.board)-1)]
+        # if 3*marble in testbrd:
         self.clearboard()
         return self
 
     def pairIndices(self, marble):
         result = []
-        for i in range(len(self.board)-1):
-            if self.board[i] == self.board[i+1] == marble:
+        for i in range(len(self.board) - 1):
+            if self.board[i] == self.board[i + 1] == marble:
                 result.append(i)
         return result
 
@@ -78,6 +86,7 @@ class Board(object):
                 result.append(i)
         return result
 
+
 class Solution(object):
     def findMinStep(self, board, hand):
         """
@@ -85,6 +94,11 @@ class Solution(object):
         :type hand: str
         :rtype: int
         """
+
+        def listwoelement(list, element):
+            a = list.index(element)
+            return list[:a] + list[a + 1:]
+
         def findsolution(original, hand, depth=0):
             options = []
             for marble in list(set(hand)):
@@ -93,43 +107,80 @@ class Solution(object):
                     copyboard = Board(original.board)
                     copyboard.insertMarble(marble, position)
                     options.append((marble, position, len(copyboard.board)))
-            if not options: #Look for 1 of marble
-                for marble in list(set(hand)):
-                    positions = original.singleIndices(marble)
-                    for position in positions:
-                        copyboard = Board(original.board)
-                        copyboard.insertMarble(marble, position)
-                        options.append((marble, position, len(copyboard.board)))
+            if not options:  # We did not found 2 marbles in a row
+                if len(set(hand)) == len(hand):
+                    return float('inf')
+
+            for marble in list(set(hand)):
+                positions = original.singleIndices(marble)
+                for position in positions:
+                    copyboard = Board(original.board)
+                    copyboard.insertMarble(marble, position)
+                    options.append((marble, position, len(copyboard.board)))
             if not options:
-                options = [(marble, 0, len(original.board)) for marble in list(set(hand))]
-            # if options:
+                options = [(marble, 0, len(original.board)) for marble in
+                           list(set(hand))]
+                # if options:
                 #
             if len(options) > 1:
                 # newoptions = []
                 # for option in options:
                 #     depth = findsolution(Board(original.board))
                 #     depth.inse
+                options = sorted(options, key=lambda x: x[2])
+                option = options[0]
+                if option[2] == 0:
+                    return depth + 1
+                else:
+                    if len(hand) <= 1:
+                        return float('inf')
+                # if options[0][2] == options[0][1]:
+                # options = [(option[0], option[1], findsolution(
+                #     Board(original.board).insertMarble(option[0],
+                #                                        option[1]),
+                #     listwoelement(hand, option[0]),
+                #     depth + 1)) for option in options]
 
-                options = [(option[0], option[1], findsolution(Board(original.board).insertMarble(option[0],option[1]), [elofhand for elofhand in hand if elofhand != option[0]], depth+1))  for option in options]
-
+                newoptions = []
+                for option in options:
+                    testSolution = (option[0], option[1], findsolution(
+                    Board(original.board).insertMarble(option[0],
+                                                       option[1]),
+                    listwoelement(hand, option[0]),
+                    depth + 1))
+                    if testSolution[2] ==0:
+                        return testSolution[2]
+                    else:
+                        newoptions.append(testSolution)
+                options = newoptions
+                options = sorted(options, key=lambda x: x[2])
                 return options[0][2]
-                # print(options)
+            # else:
+                #
+                #     return findsolution(
+                #         Board(original.board).insertMarble(option[0],
+                #                                            option[1]),
+                #         listwoelement(hand, option[0]),
+                #         depth + 1)
+                    # print(options)
             else:
                 options = sorted(options, key=lambda x: x[2])
-                bestoption = (options[0][0], options[0][1])
+                # bestoption = (options[0][0], options[0][1])
                 bestoption = options[0]
                 hand.remove(bestoption[0])
                 original.insertMarble(*bestoption[:2])
                 solution.append(bestoption)
+
                 if len(original.board) == 0:
-                    return depth
-                if len(hand) ==0:
+                    return depth + 1
+                if len(hand) == 0:
                     return float('inf')
-                depth+=1
-                return findsolution(Board(original.board), list(hand), depth+1)
+                # depth += 1
+                return findsolution(Board(original.board), list(hand),
+                                    depth + 1)
 
         hand = list(hand)
-        #original = Board(board)
+        # original = Board(board)
         solution = []
         # while hand:
         sol = findsolution(Board(board), hand)
@@ -137,8 +188,4 @@ class Solution(object):
             return -1
         else:
             return sol
-        # return -1
-
-
-
-
+            # return -1
