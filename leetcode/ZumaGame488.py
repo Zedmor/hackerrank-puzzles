@@ -49,27 +49,29 @@ class Board(object):
     def getPosition(self):
         return self.board
 
-    def clearboard(self):g
-        i = 0
+    def clearboard(self, start=0):
+        i = max(0, start)
         i2 = 3
         while len(self.board) > 2 and i < len(self.board) - 2:
-            while len(set(self.board[i:i + i2])) == 1 and i + i2 < len(
-                    self.board) + 1:
-                i2 += 1
-            if len(set(self.board[i:i + i2 - 1])) == 1 and i + i2 - 1 < len(
-                    self.board) + 1 and i2 > 3:
-                i2 -= 1
-                self.board = self.board[:i] + self.board[i + i2:]
-                i = max(-1, i - 4)
-                i2 = 3
+            cutset = set(self.board[i:i + i2])
+            if len(cutset) == 1:
+                while i + i2 < len(self.board) and self.board[i+i2] in cutset:
+                    i2 += 1
+                if len(set(self.board[i:i + i2])) == 1 and i + i2  < len(
+                        self.board) + 1 and i2 >= 3:
+                    # i2 -= 1
+                    self.board = self.board[:i] + self.board[i + i2:]
+                    i = max(-1, i - 4)
+                    i2 = 3
             i += 1
 
-    def insertMarble(self, marble, index):
+    def insertMarble(self, marble, index, clear=True):
         assert index < len(self.board) + 1
         self.board = self.board[:index] + marble + self.board[index:]
         # testbrd = self.board[index-2:min(index+3, len(self.board)-1)]
         # if 3*marble in testbrd:
-        self.clearboard()
+        if clear and len(self.board)>=3:
+            self.clearboard(index-2)
         return self
 
     def pairIndices(self, marble):
@@ -100,6 +102,11 @@ class Solution(object):
             return list[:a] + list[a + 1:]
 
         def findsolution(original, hand, depth=0):
+            setofboard = set(original.board)
+            setofhand = set(hand)
+            if len(setofboard) == len(original.board) and len(setofhand) == len(hand) and len(hand) < len(original.board):
+                return float('inf')
+
             options = []
             for marble in list(set(hand)):
                 positions = original.pairIndices(marble)
@@ -115,7 +122,7 @@ class Solution(object):
                 positions = original.singleIndices(marble)
                 for position in positions:
                     copyboard = Board(original.board)
-                    copyboard.insertMarble(marble, position)
+                    copyboard.insertMarble(marble, position, False)
                     options.append((marble, position, len(copyboard.board)))
             if not options:
                 options = [(marble, 0, len(original.board)) for marble in
