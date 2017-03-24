@@ -24,3 +24,16 @@ class Solution(object):
         :type nums2: List[int]
         :rtype: float
         """
+        hyp1 = len(nums1) // 2
+        hyp2 = len(nums2) // 2
+        print(nums1[hyp1], nums2[hyp2])
+        if nums1[hyp1] < nums2[hyp2]:
+            if nums1[hyp1] > nums2[hyp2-1]:
+                return (nums1[hyp1] + nums2[hyp2]) /2
+
+
+
+nums1 = [1, 2, 9]
+nums2 = [4, 6, 8, 10,13]
+
+print(Solution().findMedianSortedArrays(nums1, nums2))
