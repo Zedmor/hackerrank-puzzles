@@ -14,10 +14,39 @@ The wordDict parameter had been changed to a list of strings (instead of a set o
 """
 from collections import defaultdict
 
-import itertools
-
 
 class Solution(object):
+
+    # This class represents a directed graph
+    # using adjacency list representation
+    class Graph(object):
+
+        def __init__(self, vertices):
+            # No. of vertices
+            self.V = vertices
+
+            # default dictionary to store graph
+            self.graph = defaultdict(set)
+
+            self.allpaths = []
+
+            # function to add an edge to graph
+
+        def addEdge(self, u, v):
+            self.graph[u].add(v)
+
+        def dfs_paths(self, start, goal):
+            stack = [(start, [start])]
+            while stack:
+                (vertex, path) = stack.pop()
+                for next in self.graph[vertex] - set(path):
+                    if next == goal:
+                        self.allpaths.append(path + [next])
+                    else:
+                        stack.append((next, path + [next]))
+
+
+
     def wordBreak(self, s, wordDict):
         """
         :type s: str
@@ -51,85 +80,12 @@ class Solution(object):
                         intervals.append((i, i + offset,))
                     break
 
-        # print(intervals)
-
-        nextlist = []
-        for i, item in enumerate(intervals):
-            for j in range(i, len(intervals)):
-                if intervals[j][0] == item[1]:
-                    nextlist.append(j)
-                    break
-                if intervals[j][0] > item[1]:
-                    nextlist.append(None)
-                    break
-
-        print(list(itertools.zip_longest(nextlist, intervals)))
-
-
-
-        treepaths = defaultdict(dict)
-
-        class TreeNode(object):
-            def __init__(self, val):
-                self.val = val
-                self.children = []
-            def __str__(self):
-                return str(self.val)
-
-        mainnode = TreeNode(0)
-
-        def treebuilder(node, start=0):
-            collector = []
-            for ind in range(start, len(intervals)):
-                if intervals[ind][0]>node.val:
-                    break
-                if intervals[ind][0] == node.val:
-                    a = TreeNode(intervals[ind][1])
-                    node.children.append(a)
-                    treebuilder(a, ind)
-            if not node.children:
-                return TreeNode(node.val)
-            # node.children = collector
-
-        treebuilder(mainnode)
-
-        # print(mainnode)
-
-        def childrenhasher(f):
-            hashtable = {}
-            def _f(*args):
-                try:
-                    return hashtable[args]
-                except KeyError:
-                    hashtable[args] = result = f(*args)
-                    return result
-            return _f
-
-
-        # #@childrenhasher
-        # def get_children(root):
-        #     return [link for link in intervals if link[0] == root]
-
-        paths = []
-        def findchain(root, cur_path=None):
-            if not cur_path:
-                cur_path = []
-            children = root.children
-            if not children and root.val==len(s):
-                paths.append(cur_path + [root.val])
-            else:
-                for child in children:
-                    findchain(child, cur_path + [root.val])
-
-
-        findchain(mainnode)
-
-
-        if paths == [0]:
-            paths = []
-        # print(paths)
+        graph = self.Graph(len(s)+1)
+        for interval in intervals:
+            graph.addEdge(*interval)
+        graph.dfs_paths(0, len(s))
+        paths = graph.allpaths
         solution = []
-
         string = []
         for path in paths:
             for i in range(len(path) - 1):
@@ -138,28 +94,27 @@ class Solution(object):
             string = []
         return solution
 
-
 #
-
-# print(Solution().wordBreak(
-#     "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-# ["a","aa","aaa","aaaa","aaaaa","aaaaaa","aaaaaaa","aaaaaaaa","aaaaaaaaa","aaaaaaaaaa"]))
+#
+print(Solution().wordBreak(
+    "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+["a","aa","aaa","aaaa","aaaaa","aaaaaa","aaaaaaa","aaaaaaaa","aaaaaaaaa","aaaaaaaaaa"]))
 s = "catsanddog"
 dic = ["cat", "cats", "and", "sand", "dog"]
 print(Solution().wordBreak(s, dic))
-# #
-# # # # #
-# print(Solution().wordBreak("aaaaaaa",
-#                            ["aaaa", "aa", "a"]))
 #
 # # # #
-# print(Solution().wordBreak("abcd",
-#                            ["a", "abc", "b", "cd"]))
+print(Solution().wordBreak("aaaaaaa",
+                           ["aaaa", "aa", "a"]))
+
 # # #
-# print(Solution().wordBreak("aaaaaaa",
-#                            ["aaaa", "aa"]))
-# # #
+print(Solution().wordBreak("abcd",
+                           ["a", "abc", "b", "cd"]))
 # #
-# print(Solution().wordBreak("aaaaaaa",
-#                            ["aaaa", "aaa"]))
-# print(Solution().wordBreak("a", []))
+print(Solution().wordBreak("aaaaaaa",
+                           ["aaaa", "aa"]))
+# # #
+#
+print(Solution().wordBreak("aaaaaaa",
+                           ["aaaa", "aaa"]))
+print(Solution().wordBreak("a", []))
