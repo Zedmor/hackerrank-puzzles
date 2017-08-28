@@ -1,12 +1,18 @@
-a = [{3, 5, 6}, {1, 3, 5}, {1, 6}, {1, 3, 5}, {2, 3, 5}]
+def mydecorator(msg='Message'):
 
-#print(set.intersection(*a))
+    def decorated(f):
 
+        def wrapper(*args, **kwargs):
+            print('Message is ' + msg)
+            print('1')
+            z = 'sda'
+            f(*args, **kwargs)
+            print('2')
 
-dic = []
-for el in a:
-    dic = dic +list(el)
+        return wrapper
 
-z = [x for x in dic if dic.count(x)==1]
+    return decorated
 
-print(z)
+@mydecorator(msg='Hello')
+def func(name):
+    print(name)

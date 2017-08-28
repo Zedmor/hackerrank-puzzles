@@ -1,9 +1,3 @@
-"""Write a program to solve a Sudoku puzzle by filling the empty cells.
-
-Empty cells are indicated by the character '.'.
-
-You may assume that there will be only one unique solution.
-"""
 
 import copy
 import random
@@ -205,15 +199,3 @@ class Solution(object):
 
         for i, row in enumerate(board):
             board[i] = ''.join(map(str, boardasarray[i]))
-
-
-sudoku = ["..9748...", "7........", ".2.1.9...", "..7...24.", ".64.1.59.",
-          ".98...3..", "...8.3.2.", "........6", "...2759.."]
-
-sudoku = [".....7..9",".4..812..","...9...1.","..53...72","293....5.",".....53..","8...23...","7...5..4.","531.7...."]
-
-sudoku = ['4.....8.5','.3.......','...7.....','.2.....6.','....8.4..','....1....','...6.3.7.','5..2.....','1.4......']
-
-z = Solution().solveSudoku(sudoku)
-
-print(sudoku)
