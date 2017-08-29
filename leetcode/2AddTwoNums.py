@@ -17,6 +17,7 @@ class Solution(object):
         head1 = l1
         head2 = l2
         leadhead = head1
+        head1val = None
         while True:
             if head1:
                 result = l1
@@ -27,19 +28,27 @@ class Solution(object):
                 head1.val += (head2.val if head2 else 0) + carryover1
                 carryover1 = 0
                 if head1.val > 9:
-                    head1.val = 0
+                    head1.val = head1.val % 10
                     carryover1 = 1
                 if not head1.next:
+                    if carryover1:
+                        head1.next = ListNode(1)
+                        head1.val = head1.val % 10
+
                     head1 = None
                 else:
                     head1 = head1.next
             if head2:
-                head2.val += (head1val if head1 else 0) + carryover2
+                head2.val += (head1val if head1val else 0) + carryover2
+                head1val = None
                 carryover2 = 0
                 if head2.val > 9:
-                    head2.val = 0
+                    head2.val = head2.val % 10
                     carryover2 = 1
                 if not head2.next:
+                    if carryover2:
+                        head2.next = ListNode(1)
+                        head2.val = head2.val % 10
                     head2 = None
                 else:
                     head2 = head2.next
@@ -62,7 +71,7 @@ def list2ll(lst):
 # l1 = list2ll([1, 8])
 # l2 = list2ll([0])
 
-l1 = list2ll([2, 4, 3])
-l2 = list2ll([5, 6, 4])
+l1 = list2ll([5])
+l2 = list2ll([5])
 
 print(Solution().addTwoNumbers(l1, l2))
