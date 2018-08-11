@@ -29,4 +29,4 @@ class Solution(object):
         backtrack()
         return ans
 
-print(Solution().generateParenthesis(7))
+print(Solution().generateParenthesis(3))

@@ -14,6 +14,39 @@ A solution set is:
 """
 from collections import defaultdict
 
+triplets = defaultdict(list)
+duplets = defaultdict(list)
+
+def cached(cache):
+    def cached_with_argument(lookup_function):
+        def wrapper(nums, target):
+            if target in cache:
+                return list(cache[target])
+            else:
+                result = tuple(lookup_function(nums, target))
+                cache[target] = result
+                return list(result)
+        return wrapper
+    return cached_with_argument
+
+@cached(duplets)
+def find_duplet(nums, target):
+    result = []
+    for i, n in enumerate(nums):
+        if -n == target:
+            result.append([n, target])
+    return result
+
+@cached(triplets)
+def find_triplet(nums, target):
+    result = []
+    for i, n in enumerate(nums):
+        duplet = find_duplet(array[:i] + array[i+1:], target - n)
+        if result:
+            result.append(duplet + [n])
+    return result
+
+
 
 class Solution:
     def fourSum(self, nums, target):
@@ -22,36 +55,13 @@ class Solution:
         :type target: int
         :rtype: List[List[int]]
         """
-        nums = sorted(nums)
-
-        targets = defaultdict(list)
+        result = []
         for i, n in enumerate(nums):
-            targets[target - n].append(i)
-        sorted_keys = sorted(targets)
-        res = []
-        for i, n in enumerate(nums):
-            if i > 0 and nums[i] == nums[i - 1]:
-                continue
-            right_pointer = len(nums) - 1
-            left_pointer = i + 1
-            while left_pointer < right_pointer:
-                for cursor in range(left_pointer+1, right_pointer):
-                    s = nums[i] + nums[left_pointer] + nums[right_pointer] + nums[cursor]
+            triplet = find_triplet(array[:i] + array[i+1:], target - n)
+            if triplet:
+                result.append(triplet + [n])
+        return result
 
-                    if s > target:
-                        right_pointer -= 1
-                    elif s < target:
-                        left_pointer += 1
-                    else:
-                        res.append([nums[i], nums[left_pointer], nums[right_pointer], nums[cursor]])
-                        while left_pointer < right_pointer and nums[left_pointer] == nums[left_pointer + 1]:
-                            left_pointer += 1
-                        while left_pointer < right_pointer and nums[right_pointer] == nums[right_pointer - 1]:
-                            right_pointer -= 1
-                        left_pointer += 1
-                        right_pointer -= 1
-
-        return res
 
 array = [1, 0, -1, 0, -2, 2]
 
