@@ -19,28 +19,66 @@
 #   "...Q",
 #   ".Q.."]
 # ]
-#[[".Q..","...Q","Q...","..Q."],["..Q.","Q...","...Q",".Q.."]]
+# [[".Q..","...Q","Q...","..Q."],["..Q.","Q...","...Q",".Q.."]]
+from copy import deepcopy
 
-class Solution (object):
+
+def placement_possible(board, i, j):
+    return board[i][j] == '.'
+
+
+class Solution(object):
     def solveNQueens(self, n):
         """
         :type n: int
         :rtype: List[List[str]]
         """
-        import numpy as np
-        # matrix = np.zeros(shape=(n,n))
+        solutions = set()
+        initial_board = [['.' for x in range(n)] for y in range(n)]
 
-        allsols = np.array([np.zeros(shape=(n,n))] * (n**2))
-        # for sol in range(n**2):
-        for i in range(n):
-            for j in range(n):
-                print(2**i*3**j)
-                # allsols[i*j][i-1,j-1] = 1
+        def recur_search(board, deep=0):
+            if deep == n:
+                counter = 0
+                for row in board:
+                    counter += row.count('Q')
+                if counter == n:
+                    solutions.add(tuple(tuple(row) for row in board))
+                return
+            for i in range(n):
+                for j in range(n):
+                    if placement_possible(board, i, j):
+                        candidate = deepcopy(board)
+                        for m in range(n):
+                            candidate[i][m] = 'x'
+                            candidate[m][j] = 'x'
+                        new_i, new_j = i, j
+                        while new_i >= 0 and new_j >= 0:
+                            candidate[new_i][new_j] = 'x'
+                            new_i -= 1
+                            new_j -= 1
+                        new_i, new_j = i, j
+                        while new_i < n and new_j < n:
+                            candidate[new_i][new_j] = 'x'
+                            new_j += 1
+                            new_i += 1
+                        new_i, new_j = i, j
+                        while new_i >= 0 and new_j < n:
+                            candidate[new_i][new_j] = 'x'
+                            new_j += 1
+                            new_i -= 1
+                        new_i, new_j = i, j
+                        while new_i < n and new_j >= 0:
+                            candidate[new_i][new_j] = 'x'
+                            new_j -= 1
+                            new_i += 1
+                        candidate[i][j] = 'Q'
+                        recur_search(candidate, deep + 1)
 
+        recur_search(initial_board)
+        solutions = [[''.join(row).replace('x', '.') for row in solution] for solution in solutions]
+        return solutions
 
-
-
-        # return allsols
 
 a = Solution()
-print(a.solveNQueens(4))
+print(a.solveNQueens(6))
+# print(a.solveNQueens(2))
