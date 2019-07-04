@@ -14,6 +14,11 @@ Explanation: You will always arrive at index 3 no matter what. Its maximum
              jump length is 0, which makes it impossible to reach the last index.
 
 
+>>> Solution().canJump([1])
+False
+>>> Solution().canJump([1])
+True
+
 >>> Solution().canJump([2,3,1,1,4])
 True
 >>> Solution().canJump([3,2,1,0,4])
@@ -27,3 +32,18 @@ class Solution:
         :type nums: List[int]
         :rtype: bool
         """
+        def find_paths(pointer):
+            value = nums[pointer]
+            for i in range(pointer + 1, min(pointer + value + 1, len(nums) + 1)):
+                if i == (len(nums) - 1) or pointer == len(nums) - 1:
+                    return True
+                else:
+                    res = find_paths(i)
+                    return True if res else False
+
+        return find_paths(0)
+
+
+
+
+
