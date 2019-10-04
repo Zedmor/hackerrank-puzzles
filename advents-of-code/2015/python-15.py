@@ -4,11 +4,12 @@ from collections import defaultdict
 
 class Ingridient(object):
     def __init__(self, ingridient_record):
+        ingridient_record = [ingridient_record[0]] + list(map(int, ingridient_record[1:]))
         self.name, self.capacity, self.durability, self.flavor, self.texture, self.calories = ingridient_record
 
     def __repr__(self):
         return f"Name: {self.name}, Capacity: {self.capacity}, " \
-               f"Durability: {self.durability}, Texture: {self.texture}, Calories: {self.calories}\n"
+               f"Durability: {self.durability}, Texture: {self.texture}, Calories: {self.calories}"
 
 
 def line_parser(line):
@@ -34,16 +35,21 @@ def calculate_cookie_score(ingridients, amounts):
     durability = 0
     flavor = 0
     texture = 0
+
+    calories = 0
+
     for ing, amnt in zip(ingridients, amounts):
         capacity += ing.capacity * amnt
         durability += ing.durability * amnt
         flavor += ing.flavor * amnt
         texture += ing.texture * amnt
+        calories += ing.calories * amnt
     capacity = max(0, capacity)
     durability = max(0, durability)
     flavor = max(0, flavor)
     texture = max(0, texture)
-    return capacity * durability * flavor * texture
+
+    return calories, capacity * durability * flavor * texture
 
 
 def main():
@@ -53,5 +59,16 @@ def main():
     """
     scores = defaultdict(int)
     lines = open('input-15.txt').readlines()
-    ingridients = map(Ingridient, map(line_parser, lines))
+    ingridients = list(map(Ingridient, map(line_parser, lines)))
     print(list(ingridients))
+
+    max_score = 0
+
+    for i in range(101):
+        for j in range(101 - i):
+            for k in range(101 - i + j):
+                calories, score = calculate_cookie_score(ingridients, [i, j, k, 100 - (sum([i, j, k]))])
+                if calories == 500:
+                    max_score = max(max_score, score)
+
+    print(max_score)
