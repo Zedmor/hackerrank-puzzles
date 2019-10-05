@@ -1,0 +1,501 @@
+datetime_of_sale,game1,units_sold1,game2,units_sold2,on_sale
+03/11/1984 12:29 PM,Jungle Hunt,18,Super Cobra,48,OS
+10/10/1983 02:28 AM,Popeye,6,Tempest,12,
+01/21/1984 10:36 PM,Scramble,49,Space Duel,20,OS
+01/09/1984 05:29 PM,Popeye,12,Dragon's Lair,41,OS
+04/22/1983 12:52 AM,Galaxian,48,Dragon's Lair,36,OS
+08/22/1983 06:30 PM,Ms. Pac-Man,19,Scramble,39,
+08/20/1983 10:06 AM,Space Duel,49,Scramble,42,
+09/30/1984 07:38 AM,Jungle Hunt,21,Stargate,13,
+12/01/1983 07:15 PM,Dig Dug,44,Mr. Do!,26,
+03/06/1984 06:14 PM,Defender,4,Missile Command,4,
+04/30/1984 04:20 PM,Scramble,18,Galaxian,36,
+06/29/1984 11:44 AM,Robotron: 2084,23,Stargate,43,
+12/05/1984 05:30 AM,Tempest,6,Centipede,33,
+07/11/1983 10:43 AM,Berzerk,48,Dig Dug,13,
+03/13/1984 07:43 AM,Galaxian,17,Missile Command,33,
+09/03/1984 03:46 AM,Space Duel,48,Berzerk,45,
+03/07/1984 07:05 PM,Super Cobra,13,Space Duel,23,
+11/12/1983 11:41 AM,Mr. Do!,39,Centipede,1,
+06/15/1984 02:32 PM,Star Wars,33,Centipede,46,
+03/08/1983 10:51 PM,Dig Dug,14,Berzerk,5,
+11/18/1983 11:01 AM,Super Cobra,46,Super Cobra,48,
+10/22/1983 01:37 PM,Centipede,24,Galaxian,40,OS
+05/07/1984 04:33 PM,Space Invaders,5,Pac-Man,3,
+08/31/1984 08:17 PM,Tempest,32,Donkey Kong,7,
+04/09/1983 07:25 AM,Mr. Do!,31,Berzerk,2,OS
+12/23/1983 10:44 AM,Q*bert,24,Robotron: 2084,5,OS
+01/12/1983 07:51 PM,Centipede,32,Space Duel,47,
+03/19/1984 08:38 AM,Pole Position,50,Pac-Man,18,OS
+02/22/1983 04:42 AM,Galaxian,12,Q*bert,27,OS
+04/23/1984 02:28 AM,Space Invaders,49,Dragon's Lair,50,
+05/23/1983 10:53 PM,Popeye,30,Asteroids,43,
+07/08/1984 02:58 PM,Centipede,38,Super Cobra,10,OS
+11/10/1984 08:10 AM,Q*bert,6,Donkey Kong Jr.,28,
+09/02/1983 10:56 PM,Tempest,27,Donkey Kong,32,OS
+10/20/1984 02:07 AM,Dragon's Lair,39,Berzerk,38,
+12/27/1983 10:55 AM,Space Invaders,40,Berzerk,16,
+08/03/1984 12:47 AM,Asteroids,21,Super Cobra,26,
+07/13/1984 05:50 PM,Defender,15,Jungle Hunt,20,
+12/01/1983 06:06 AM,Scramble,42,Scramble,38,OS
+06/22/1984 07:17 PM,Stargate,32,Donkey Kong,8,
+06/13/1984 11:06 PM,Pac-Man,6,Space Duel,7,
+02/13/1984 07:23 PM,Dragon's Lair,40,Space Invaders,13,OS
+04/22/1984 12:21 AM,Pac-Man,29,Defender,3,OS
+02/12/1984 06:07 AM,Dig Dug,12,Defender,32,
+04/12/1984 05:44 PM,Dragon's Lair,27,Mr. Do!,31,
+12/03/1983 03:11 AM,Galaxian,33,Berzerk,30,
+10/17/1983 05:21 PM,Super Cobra,44,Donkey Kong,8,
+12/07/1983 09:12 AM,Popeye,10,Dig Dug,4,
+04/07/1984 02:51 AM,Dragon's Lair,33,Missile Command,5,
+04/03/1983 02:01 AM,Robotron: 2084,34,Space Duel,24,
+03/22/1984 04:45 AM,Super Cobra,19,Pac-Man,24,
+03/28/1983 08:56 AM,Super Cobra,23,Defender,48,
+01/28/1984 01:41 AM,Scramble,21,Donkey Kong,49,
+10/21/1984 08:24 PM,Pole Position,44,Tempest,38,
+05/30/1984 12:39 PM,Star Wars,47,Galaxian,42,OS
+05/29/1984 12:41 PM,Pac-Man,46,Jungle Hunt,38,OS
+04/12/1983 03:19 PM,Q*bert,35,Super Cobra,9,OS
+01/25/1983 03:42 PM,Dragon's Lair,37,Asteroids,43,
+09/17/1984 07:07 AM,Jungle Hunt,14,Super Cobra,22,OS
+07/18/1984 10:26 PM,Missile Command,47,Dig Dug,2,
+05/26/1984 04:17 AM,Pac-Man,31,Q*bert,17,
+01/14/1983 03:44 AM,Space Invaders,36,Pac-Man,19,OS
+08/01/1983 07:50 AM,Jungle Hunt,6,Centipede,28,OS
+09/04/1983 03:20 PM,Stargate,38,Donkey Kong,9,
+08/13/1983 04:41 PM,Galaxian,12,Galaxian,20,
+02/11/1984 09:35 PM,Pole Position,39,Dragon's Lair,38,OS
+05/17/1984 03:52 AM,Ms. Pac-Man,19,Asteroids,36,
+01/04/1983 10:29 AM,Mr. Do!,30,Ms. Pac-Man,9,
+01/06/1983 04:27 AM,Donkey Kong,6,Tempest,39,
+10/18/1983 06:55 PM,Defender,8,Scramble,32,
+02/07/1983 10:22 PM,Popeye,10,Super Cobra,5,OS
+07/22/1984 09:50 PM,Stargate,8,Donkey Kong,48,OS
+10/06/1984 07:51 PM,Ms. Pac-Man,9,Mr. Do!,27,OS
+07/04/1984 03:12 PM,Tempest,27,Popeye,35,
+01/31/1984 08:29 PM,Tempest,37,Pole Position,9,OS
+03/02/1983 04:07 AM,Berzerk,35,Ms. Pac-Man,7,
+01/03/1983 11:53 AM,Galaxian,50,Jungle Hunt,13,
+08/01/1984 10:09 PM,Centipede,28,Star Wars,34,
+02/07/1984 07:01 AM,Battlezone,33,Dig Dug,25,
+08/01/1983 01:55 AM,Centipede,4,Asteroids,47,
+03/06/1983 08:58 PM,Scramble,26,Space Invaders,10,
+12/06/1984 02:22 PM,Berzerk,17,Tempest,49,
+01/17/1983 06:14 PM,Popeye,27,Asteroids,35,
+12/16/1983 04:06 AM,Super Cobra,1,Tempest,35,
+03/12/1984 07:07 PM,Space Invaders,35,Robotron: 2084,20,
+01/17/1984 10:31 PM,Donkey Kong Jr.,11,Battlezone,11,OS
+07/08/1983 07:57 AM,Q*bert,25,Pac-Man,21,
+01/28/1983 09:01 PM,Missile Command,47,Mr. Do!,45,
+07/13/1984 12:45 PM,Donkey Kong Jr.,48,Asteroids,12,
+02/21/1983 01:50 AM,Jungle Hunt,41,Berzerk,25,OS
+06/22/1983 02:06 PM,Robotron: 2084,30,Defender,13,
+02/02/1983 11:54 PM,Pac-Man,36,Ms. Pac-Man,6,
+05/25/1983 12:26 PM,Donkey Kong Jr.,28,Donkey Kong,2,OS
+05/10/1984 09:12 AM,Galaxian,30,Centipede,41,
+07/30/1983 07:40 AM,Popeye,36,Donkey Kong Jr.,46,
+09/15/1983 09:18 AM,Galaxian,24,Popeye,3,
+01/16/1984 11:58 PM,Q*bert,28,Tempest,26,
+06/12/1983 12:22 AM,Star Wars,44,Robotron: 2084,9,
+06/08/1983 12:52 AM,Super Cobra,3,Donkey Kong,13,
+07/20/1983 09:54 PM,Pac-Man,16,Donkey Kong,29,
+05/17/1983 09:39 PM,Super Cobra,42,Jungle Hunt,50,OS
+06/14/1984 03:18 PM,Popeye,9,Berzerk,36,OS
+02/03/1984 01:34 AM,Centipede,7,Robotron: 2084,13,
+03/18/1983 11:23 PM,Ms. Pac-Man,5,Ms. Pac-Man,18,OS
+10/28/1984 05:20 PM,Q*bert,2,Jungle Hunt,10,
+07/09/1983 08:11 PM,Popeye,46,Mr. Do!,43,OS
+12/15/1984 05:36 PM,Super Cobra,10,Missile Command,40,OS
+10/10/1983 08:11 AM,Dragon's Lair,35,Donkey Kong,5,
+10/07/1984 06:18 PM,Donkey Kong,7,Mr. Do!,45,
+05/25/1983 04:35 AM,Pole Position,14,Battlezone,34,OS
+01/14/1983 05:54 PM,Scramble,14,Super Cobra,26,
+08/02/1983 11:45 AM,Jungle Hunt,13,Pac-Man,32,
+04/26/1984 04:16 AM,Ms. Pac-Man,32,Space Duel,42,OS
+08/04/1983 05:14 AM,Berzerk,48,Q*bert,43,OS
+05/31/1983 07:26 PM,Dig Dug,10,Stargate,16,OS
+07/23/1983 10:57 AM,Pole Position,36,Pole Position,40,
+08/14/1984 03:59 AM,Defender,16,Stargate,1,
+03/12/1984 04:09 PM,Robotron: 2084,13,Asteroids,42,
+06/26/1983 01:01 PM,Mr. Do!,29,Star Wars,6,
+11/12/1984 08:33 PM,Galaxian,30,Ms. Pac-Man,41,
+10/05/1983 08:02 AM,Space Duel,14,Space Duel,35,
+07/20/1983 03:17 AM,Pole Position,40,Super Cobra,26,
+06/11/1984 07:51 AM,Jungle Hunt,27,Asteroids,30,
+05/24/1983 07:34 PM,Q*bert,16,Donkey Kong Jr.,46,
+08/09/1983 06:01 AM,Pole Position,35,Donkey Kong Jr.,44,OS
+01/19/1984 07:52 AM,Pac-Man,13,Galaxian,1,
+04/27/1984 09:23 AM,Popeye,24,Defender,41,
+04/06/1983 06:39 AM,Dragon's Lair,10,Centipede,16,
+12/04/1984 07:43 PM,Stargate,42,Donkey Kong,44,
+07/10/1984 04:14 PM,Pole Position,10,Defender,1,
+06/25/1984 12:18 PM,Popeye,2,Q*bert,32,
+12/04/1984 04:28 PM,Donkey Kong,29,Tempest,17,OS
+05/10/1983 02:08 PM,Centipede,1,Dig Dug,12,
+02/15/1984 01:45 AM,Defender,48,Dig Dug,1,
+11/02/1984 09:06 PM,Asteroids,41,Popeye,43,
+08/29/1984 03:42 PM,Space Duel,8,Asteroids,1,
+11/26/1984 09:37 AM,Donkey Kong Jr.,32,Q*bert,45,OS
+08/29/1983 12:28 AM,Super Cobra,49,Dig Dug,10,OS
+08/11/1984 05:34 AM,Donkey Kong Jr.,41,Popeye,17,OS
+07/18/1984 08:16 AM,Q*bert,46,Defender,12,
+04/14/1984 01:42 AM,Defender,7,Scramble,13,OS
+06/08/1984 05:13 PM,Donkey Kong,44,Dig Dug,3,
+02/18/1984 06:52 PM,Q*bert,6,Jungle Hunt,24,
+05/14/1983 10:48 AM,Scramble,44,Tempest,10,
+03/07/1984 05:11 PM,Defender,19,Mr. Do!,23,
+11/13/1984 11:51 AM,Space Duel,36,Donkey Kong,22,
+02/03/1983 03:41 PM,Galaxian,50,Missile Command,10,OS
+08/10/1983 11:01 PM,Donkey Kong Jr.,33,Space Duel,18,
+11/10/1984 04:44 AM,Pac-Man,14,Robotron: 2084,48,
+06/11/1984 07:18 PM,Pac-Man,42,Mr. Do!,28,OS
+12/14/1983 06:13 PM,Donkey Kong,11,Berzerk,3,
+08/23/1983 05:59 AM,Space Duel,44,Donkey Kong Jr.,38,
+09/20/1983 10:23 AM,Space Invaders,34,Donkey Kong Jr.,18,OS
+03/09/1984 11:35 PM,Centipede,19,Centipede,8,OS
+11/28/1984 06:56 PM,Space Duel,45,Popeye,23,OS
+10/06/1984 10:44 PM,Battlezone,35,Asteroids,35,
+02/20/1983 07:52 PM,Centipede,7,Robotron: 2084,15,
+06/02/1984 02:18 PM,Robotron: 2084,28,Tempest,13,OS
+11/14/1984 02:05 AM,Jungle Hunt,41,Ms. Pac-Man,31,OS
+03/16/1984 02:50 PM,Centipede,29,Missile Command,35,
+10/31/1983 09:01 AM,Asteroids,25,Jungle Hunt,30,
+09/04/1984 03:44 PM,Missile Command,40,Robotron: 2084,13,OS
+01/19/1983 11:12 AM,Super Cobra,15,Space Duel,31,
+05/25/1984 03:41 AM,Super Cobra,26,Pole Position,34,
+09/01/1983 08:30 AM,Super Cobra,26,Space Invaders,45,
+05/31/1983 06:36 PM,Donkey Kong Jr.,21,Battlezone,35,OS
+03/24/1983 11:05 AM,Donkey Kong,34,Missile Command,36,
+11/27/1984 05:29 AM,Berzerk,43,Tempest,4,
+09/30/1983 03:12 AM,Dig Dug,20,Missile Command,43,
+11/02/1984 11:22 PM,Missile Command,27,Donkey Kong Jr.,1,
+10/12/1984 05:08 AM,Dig Dug,12,Donkey Kong,45,
+07/19/1983 09:51 PM,Mr. Do!,17,Pac-Man,18,
+12/22/1983 05:39 AM,Ms. Pac-Man,22,Popeye,39,
+08/03/1983 11:26 AM,Robotron: 2084,50,Missile Command,39,OS
+09/17/1984 04:03 PM,Ms. Pac-Man,11,Dragon's Lair,32,
+10/02/1984 02:25 AM,Missile Command,4,Scramble,7,OS
+12/28/1984 10:56 PM,Dragon's Lair,21,Star Wars,31,
+07/10/1983 08:02 AM,Stargate,9,Defender,13,
+12/21/1984 08:09 AM,Space Duel,15,Pac-Man,22,OS
+08/06/1984 12:43 PM,Defender,46,Space Invaders,9,
+12/31/1984 01:11 PM,Battlezone,6,Stargate,10,OS
+03/15/1983 10:08 PM,Asteroids,4,Mr. Do!,27,OS
+04/01/1983 05:16 AM,Q*bert,46,Stargate,18,
+01/21/1984 01:41 PM,Missile Command,35,Defender,44,
+11/16/1984 08:19 PM,Donkey Kong,1,Dig Dug,43,
+10/12/1983 08:23 PM,Scramble,24,Pole Position,14,
+12/01/1983 08:56 PM,Q*bert,14,Defender,45,OS
+11/05/1984 08:18 AM,Tempest,43,Jungle Hunt,2,
+05/04/1983 03:08 PM,Robotron: 2084,18,Scramble,4,
+12/05/1984 05:14 AM,Missile Command,45,Ms. Pac-Man,28,OS
+06/08/1984 07:45 AM,Pac-Man,48,Dig Dug,11,OS
+10/19/1984 03:49 PM,Defender,22,Berzerk,19,OS
+08/31/1983 01:50 AM,Defender,37,Star Wars,3,
+06/01/1983 06:48 PM,Pole Position,2,Battlezone,37,
+08/31/1983 04:43 PM,Super Cobra,45,Berzerk,31,OS
+01/28/1984 03:29 AM,Q*bert,17,Robotron: 2084,38,
+04/20/1983 08:39 PM,Robotron: 2084,23,Donkey Kong,15,
+12/15/1984 11:52 AM,Berzerk,37,Space Invaders,28,OS
+05/18/1983 05:38 AM,Dragon's Lair,46,Galaxian,46,
+06/14/1984 01:58 PM,Robotron: 2084,40,Stargate,6,
+12/16/1984 04:23 PM,Galaxian,21,Galaxian,47,OS
+04/28/1983 03:51 PM,Donkey Kong,15,Pac-Man,38,
+01/30/1983 01:24 PM,Donkey Kong Jr.,37,Stargate,46,
+05/30/1984 07:24 AM,Donkey Kong,6,Space Duel,13,
+04/10/1983 11:28 PM,Star Wars,12,Berzerk,34,
+03/15/1983 07:41 PM,Donkey Kong Jr.,20,Pac-Man,2,
+11/29/1983 12:30 AM,Ms. Pac-Man,16,Defender,16,OS
+10/14/1984 10:23 PM,Space Invaders,43,Dig Dug,33,
+05/24/1984 01:56 AM,Robotron: 2084,25,Space Invaders,12,OS
+07/23/1984 04:22 PM,Scramble,29,Battlezone,16,OS
+11/11/1984 12:10 AM,Q*bert,14,Space Invaders,37,OS
+04/29/1983 12:27 AM,Galaxian,4,Donkey Kong,17,
+04/13/1983 08:48 AM,Pac-Man,41,Battlezone,25,
+12/14/1984 02:27 PM,Ms. Pac-Man,7,Galaxian,12,
+10/06/1984 10:06 PM,Donkey Kong Jr.,18,Q*bert,29,
+11/27/1983 04:56 AM,Stargate,8,Star Wars,49,
+12/22/1983 11:15 PM,Robotron: 2084,12,Q*bert,29,
+10/12/1983 03:52 AM,Mr. Do!,35,Tempest,43,OS
+04/07/1984 04:24 AM,Missile Command,42,Scramble,42,
+05/18/1983 01:19 AM,Galaxian,33,Defender,14,OS
+08/17/1984 06:11 PM,Pole Position,45,Q*bert,24,
+01/01/1983 04:48 PM,Robotron: 2084,31,Donkey Kong,43,
+06/08/1983 04:12 PM,Dragon's Lair,12,Defender,40,
+10/09/1983 09:10 AM,Centipede,44,Popeye,29,
+08/21/1984 05:31 AM,Pole Position,15,Asteroids,15,OS
+09/16/1983 03:05 AM,Pac-Man,13,Donkey Kong Jr.,35,OS
+05/19/1984 12:51 PM,Donkey Kong Jr.,28,Space Duel,30,
+09/18/1984 06:16 PM,Pac-Man,27,Scramble,37,
+01/31/1983 10:55 AM,Ms. Pac-Man,40,Stargate,19,OS
+05/30/1983 07:51 PM,Donkey Kong,16,Q*bert,31,OS
+04/15/1983 12:15 AM,Jungle Hunt,48,Popeye,38,
+06/10/1983 07:54 PM,Galaxian,39,Defender,11,
+11/07/1983 04:35 AM,Dig Dug,43,Pole Position,5,
+08/20/1984 06:18 PM,Battlezone,49,Tempest,32,
+04/25/1984 03:35 PM,Berzerk,39,Space Invaders,6,
+08/09/1984 10:34 AM,Missile Command,14,Mr. Do!,21,OS
+08/01/1984 08:41 PM,Space Invaders,8,Star Wars,14,
+11/23/1983 04:33 PM,Asteroids,13,Ms. Pac-Man,21,
+08/07/1984 01:19 PM,Space Duel,11,Mr. Do!,44,
+11/23/1983 09:26 PM,Berzerk,39,Popeye,26,
+05/11/1983 05:43 PM,Pac-Man,40,Robotron: 2084,26,
+06/05/1984 03:50 PM,Pac-Man,40,Berzerk,27,
+04/28/1983 11:22 PM,Star Wars,32,Donkey Kong Jr.,18,
+09/05/1983 04:51 PM,Jungle Hunt,7,Ms. Pac-Man,1,
+10/05/1983 12:33 PM,Pac-Man,41,Defender,36,OS
+05/05/1983 07:27 AM,Asteroids,19,Ms. Pac-Man,31,
+07/11/1983 10:06 AM,Mr. Do!,40,Space Invaders,36,
+01/18/1983 09:26 PM,Mr. Do!,27,Missile Command,7,OS
+12/13/1983 06:45 AM,Jungle Hunt,38,Asteroids,14,
+05/07/1983 04:38 AM,Defender,50,Battlezone,5,
+09/03/1984 12:54 AM,Dig Dug,36,Donkey Kong,5,OS
+02/14/1983 06:03 PM,Space Invaders,44,Mr. Do!,9,
+08/01/1983 06:48 AM,Pole Position,9,Stargate,20,
+08/12/1984 03:09 PM,Space Duel,28,Mr. Do!,32,OS
+07/21/1983 06:37 AM,Pac-Man,3,Mr. Do!,20,
+11/16/1983 10:31 PM,Pole Position,15,Centipede,48,
+05/10/1984 03:36 AM,Mr. Do!,46,Robotron: 2084,31,
+02/09/1983 09:04 AM,Dragon's Lair,32,Centipede,9,
+10/18/1984 05:06 PM,Scramble,4,Pole Position,7,OS
+05/03/1983 01:28 PM,Mr. Do!,43,Tempest,10,OS
+06/03/1984 06:16 PM,Battlezone,3,Berzerk,50,
+04/13/1983 05:39 PM,Mr. Do!,12,Stargate,38,OS
+12/05/1984 11:13 AM,Asteroids,43,Berzerk,38,OS
+08/04/1984 11:38 PM,Stargate,11,Scramble,20,
+04/05/1983 04:39 PM,Robotron: 2084,13,Battlezone,47,
+01/17/1984 01:29 PM,Super Cobra,29,Donkey Kong,33,OS
+09/14/1984 02:56 PM,Defender,34,Ms. Pac-Man,48,
+10/31/1984 01:58 AM,Centipede,22,Berzerk,40,OS
+08/24/1984 01:41 AM,Space Duel,42,Galaxian,4,
+08/05/1983 04:54 AM,Pac-Man,28,Dragon's Lair,48,
+07/05/1984 07:06 PM,Popeye,32,Centipede,25,
+04/26/1984 03:38 AM,Pac-Man,46,Stargate,17,
+06/26/1983 02:53 AM,Dragon's Lair,21,Dragon's Lair,14,
+05/25/1984 05:16 AM,Asteroids,16,Q*bert,48,
+03/03/1984 02:51 PM,Missile Command,13,Defender,35,
+08/01/1983 08:04 AM,Stargate,7,Q*bert,32,
+12/14/1983 11:32 PM,Popeye,7,Dig Dug,12,
+08/12/1984 02:49 PM,Robotron: 2084,16,Robotron: 2084,5,
+06/23/1984 07:16 PM,Dig Dug,6,Dragon's Lair,14,
+08/29/1984 11:01 AM,Asteroids,20,Asteroids,33,
+01/30/1984 07:39 AM,Missile Command,36,Jungle Hunt,13,
+02/27/1984 04:48 PM,Galaxian,34,Stargate,45,OS
+12/07/1984 04:45 AM,Stargate,48,Asteroids,21,
+08/06/1983 05:33 PM,Asteroids,4,Pole Position,49,
+08/17/1984 05:23 PM,Centipede,34,Pole Position,45,
+06/01/1983 09:52 AM,Scramble,32,Donkey Kong,33,
+08/29/1983 02:32 PM,Stargate,11,Donkey Kong,3,
+10/28/1983 02:15 PM,Scramble,5,Donkey Kong,1,
+06/11/1984 09:58 PM,Centipede,26,Q*bert,16,
+05/30/1983 01:03 PM,Dragon's Lair,14,Super Cobra,38,OS
+09/20/1983 03:05 AM,Super Cobra,47,Missile Command,7,
+09/07/1984 05:44 AM,Galaxian,9,Pole Position,24,
+10/20/1983 09:16 AM,Dig Dug,9,Donkey Kong Jr.,40,
+01/05/1984 12:40 AM,Asteroids,21,Space Duel,19,OS
+05/16/1983 12:28 PM,Q*bert,24,Missile Command,12,
+11/05/1983 07:35 AM,Donkey Kong Jr.,32,Dig Dug,41,
+03/26/1984 01:07 AM,Battlezone,50,Star Wars,40,OS
+11/02/1984 04:06 AM,Q*bert,31,Super Cobra,15,
+07/30/1984 06:18 AM,Missile Command,32,Scramble,43,
+03/06/1984 05:19 AM,Q*bert,50,Defender,45,OS
+04/11/1984 08:03 AM,Galaxian,1,Berzerk,46,
+10/24/1983 11:31 AM,Scramble,9,Berzerk,34,
+05/26/1984 05:43 PM,Scramble,39,Super Cobra,21,
+05/16/1984 03:32 AM,Star Wars,23,Jungle Hunt,34,
+07/28/1983 12:35 AM,Space Duel,38,Q*bert,31,OS
+08/25/1984 08:37 AM,Q*bert,49,Tempest,28,
+12/09/1983 07:44 AM,Mr. Do!,33,Scramble,15,OS
+09/07/1983 06:23 PM,Dig Dug,34,Pac-Man,23,
+09/21/1984 05:22 AM,Defender,24,Asteroids,17,OS
+04/08/1984 05:58 PM,Star Wars,7,Space Duel,30,OS
+11/07/1984 01:09 AM,Pac-Man,11,Pac-Man,25,
+06/23/1984 02:54 PM,Jungle Hunt,35,Defender,47,OS
+04/27/1983 04:07 AM,Jungle Hunt,27,Missile Command,25,
+10/29/1984 10:25 PM,Space Invaders,7,Dig Dug,49,OS
+06/27/1983 11:11 PM,Super Cobra,32,Q*bert,31,
+07/26/1984 08:21 PM,Popeye,25,Space Invaders,37,OS
+04/04/1983 10:12 AM,Super Cobra,23,Dig Dug,3,
+09/27/1984 09:27 PM,Missile Command,13,Pole Position,20,
+10/06/1983 01:01 AM,Pac-Man,50,Scramble,49,
+01/05/1983 07:48 PM,Dragon's Lair,12,Stargate,35,OS
+05/22/1984 01:51 PM,Jungle Hunt,49,Pole Position,34,OS
+12/03/1984 06:17 PM,Super Cobra,40,Tempest,29,
+06/15/1983 02:40 AM,Pac-Man,5,Mr. Do!,14,
+05/03/1983 11:40 PM,Robotron: 2084,11,Asteroids,14,
+05/30/1984 10:17 AM,Battlezone,38,Galaxian,24,
+11/08/1984 08:16 PM,Scramble,18,Mr. Do!,45,
+02/26/1983 02:21 PM,Galaxian,32,Defender,37,
+11/16/1983 07:27 PM,Berzerk,18,Stargate,34,
+03/23/1983 02:18 AM,Asteroids,40,Stargate,49,
+10/14/1983 06:25 AM,Battlezone,30,Battlezone,29,
+05/15/1983 08:33 AM,Centipede,25,Mr. Do!,21,
+10/23/1984 08:20 AM,Super Cobra,20,Ms. Pac-Man,20,
+11/27/1984 01:42 AM,Mr. Do!,37,Stargate,49,
+05/08/1984 10:47 AM,Q*bert,46,Mr. Do!,50,OS
+04/04/1983 01:25 AM,Star Wars,20,Pole Position,19,OS
+01/27/1983 07:12 PM,Tempest,2,Robotron: 2084,48,
+07/31/1983 01:51 PM,Super Cobra,39,Defender,30,
+06/04/1983 08:21 PM,Scramble,1,Scramble,37,OS
+12/20/1983 10:38 AM,Jungle Hunt,24,Stargate,10,
+02/15/1984 01:11 AM,Ms. Pac-Man,16,Pole Position,15,
+10/19/1983 01:30 AM,Donkey Kong,46,Battlezone,44,
+11/14/1983 08:32 AM,Asteroids,7,Mr. Do!,34,OS
+08/08/1984 12:53 PM,Berzerk,6,Jungle Hunt,9,
+09/10/1984 03:39 AM,Stargate,15,Star Wars,12,
+04/25/1983 10:22 PM,Star Wars,2,Donkey Kong,46,
+08/14/1983 08:03 PM,Defender,18,Scramble,9,
+12/27/1983 10:11 PM,Missile Command,26,Battlezone,36,
+08/31/1984 11:15 AM,Stargate,25,Defender,9,OS
+10/27/1984 12:38 PM,Pole Position,33,Space Duel,20,
+03/12/1984 06:45 AM,Berzerk,20,Missile Command,9,
+03/14/1984 01:31 PM,Scramble,38,Popeye,10,OS
+11/17/1983 06:49 PM,Dig Dug,43,Star Wars,46,OS
+06/17/1983 11:38 AM,Ms. Pac-Man,45,Super Cobra,14,OS
+10/03/1983 10:14 AM,Popeye,29,Dragon's Lair,29,OS
+07/19/1984 03:12 AM,Battlezone,48,Dragon's Lair,33,
+03/29/1984 06:57 AM,Star Wars,50,Dragon's Lair,47,OS
+12/15/1983 02:30 PM,Defender,9,Tempest,14,OS
+03/15/1984 05:51 PM,Centipede,13,Ms. Pac-Man,25,OS
+02/05/1984 07:13 AM,Ms. Pac-Man,18,Space Invaders,49,
+03/02/1983 06:10 AM,Pole Position,6,Defender,46,
+11/10/1983 10:07 AM,Tempest,14,Pole Position,42,
+02/17/1983 12:36 AM,Robotron: 2084,30,Defender,3,
+04/30/1983 07:17 AM,Asteroids,12,Pole Position,7,
+09/23/1983 03:21 PM,Mr. Do!,44,Q*bert,31,
+02/01/1983 01:35 PM,Pole Position,21,Pole Position,31,
+05/31/1983 05:38 PM,Q*bert,34,Asteroids,44,
+11/27/1984 03:30 AM,Star Wars,17,Q*bert,50,
+06/03/1984 11:25 PM,Galaxian,33,Star Wars,32,OS
+04/05/1984 01:12 AM,Centipede,30,Asteroids,37,
+05/08/1983 07:26 AM,Asteroids,10,Stargate,20,OS
+04/28/1983 09:47 PM,Space Invaders,4,Popeye,23,OS
+02/10/1983 02:44 PM,Galaxian,17,Popeye,5,OS
+04/17/1983 04:31 PM,Berzerk,17,Defender,17,
+09/26/1984 03:15 PM,Dig Dug,28,Popeye,19,
+09/02/1984 12:19 AM,Donkey Kong Jr.,25,Dragon's Lair,40,OS
+06/08/1983 12:05 AM,Battlezone,26,Donkey Kong,33,
+01/19/1983 03:25 PM,Q*bert,44,Pole Position,1,OS
+10/16/1984 08:11 AM,Dig Dug,15,Ms. Pac-Man,27,
+06/16/1984 04:27 PM,Dragon's Lair,31,Space Invaders,5,OS
+09/08/1984 06:45 AM,Pac-Man,26,Centipede,48,OS
+01/20/1983 06:30 AM,Ms. Pac-Man,10,Dig Dug,16,
+12/28/1984 11:13 AM,Stargate,31,Missile Command,28,OS
+08/02/1984 02:54 PM,Pac-Man,26,Pole Position,41,
+09/30/1983 03:37 AM,Centipede,35,Missile Command,30,
+11/01/1983 03:00 PM,Q*bert,4,Galaxian,32,
+03/31/1984 04:48 AM,Stargate,7,Mr. Do!,14,
+08/19/1983 08:49 PM,Stargate,37,Dragon's Lair,40,
+07/06/1984 05:08 AM,Centipede,45,Dragon's Lair,9,
+05/05/1983 03:24 AM,Battlezone,45,Jungle Hunt,8,
+01/20/1984 11:13 PM,Donkey Kong Jr.,6,Jungle Hunt,8,
+01/22/1984 04:22 PM,Donkey Kong Jr.,47,Defender,32,OS
+08/11/1983 04:02 PM,Super Cobra,33,Missile Command,9,
+12/02/1984 12:43 AM,Donkey Kong,2,Robotron: 2084,27,OS
+10/10/1983 04:28 PM,Asteroids,38,Stargate,11,OS
+03/07/1983 10:34 AM,Jungle Hunt,33,Jungle Hunt,4,
+07/21/1983 12:06 AM,Ms. Pac-Man,29,Missile Command,10,
+06/15/1984 05:54 PM,Pac-Man,16,Battlezone,27,
+10/27/1983 03:34 AM,Dig Dug,37,Super Cobra,35,
+11/28/1983 02:33 PM,Stargate,49,Asteroids,30,
+06/04/1983 06:24 PM,Berzerk,20,Mr. Do!,33,OS
+12/02/1983 03:29 PM,Stargate,33,Pac-Man,45,
+05/20/1983 03:49 PM,Space Duel,4,Galaxian,46,OS
+08/14/1984 01:37 AM,Q*bert,48,Berzerk,16,OS
+10/31/1984 10:13 AM,Defender,34,Pac-Man,50,
+02/14/1983 07:34 AM,Star Wars,36,Dig Dug,10,
+12/15/1983 03:54 AM,Star Wars,7,Star Wars,14,
+07/25/1984 03:05 AM,Battlezone,31,Q*bert,33,
+11/23/1983 12:19 PM,Space Duel,45,Pole Position,25,OS
+04/28/1984 04:22 PM,Robotron: 2084,24,Donkey Kong Jr.,22,
+08/02/1984 06:21 AM,Popeye,3,Space Invaders,26,
+11/26/1983 02:23 PM,Asteroids,10,Dig Dug,26,OS
+12/07/1984 11:01 PM,Ms. Pac-Man,3,Mr. Do!,45,
+10/06/1983 05:16 PM,Stargate,44,Robotron: 2084,37,OS
+04/11/1984 06:41 AM,Space Invaders,39,Popeye,32,OS
+02/19/1983 02:37 PM,Berzerk,21,Q*bert,19,
+06/26/1983 01:12 PM,Robotron: 2084,16,Stargate,4,
+02/08/1983 04:45 PM,Star Wars,45,Stargate,46,
+05/18/1984 12:38 PM,Centipede,46,Asteroids,26,
+08/28/1983 09:40 AM,Q*bert,21,Pac-Man,32,
+02/09/1984 11:20 PM,Dragon's Lair,49,Scramble,35,OS
+04/16/1984 11:26 AM,Jungle Hunt,29,Star Wars,47,OS
+10/01/1983 08:33 PM,Donkey Kong Jr.,44,Battlezone,13,OS
+09/28/1983 11:01 PM,Defender,6,Centipede,45,
+12/30/1983 10:01 PM,Defender,23,Tempest,43,
+02/03/1984 02:36 AM,Galaxian,15,Space Invaders,15,OS
+07/29/1984 10:49 AM,Stargate,3,Dig Dug,31,
+11/07/1984 05:43 PM,Pac-Man,5,Missile Command,17,OS
+09/06/1984 06:47 PM,Popeye,2,Space Duel,47,
+08/16/1983 04:35 PM,Donkey Kong Jr.,42,Ms. Pac-Man,37,
+03/01/1983 11:46 PM,Q*bert,40,Space Duel,6,OS
+01/12/1983 07:45 PM,Donkey Kong,15,Stargate,18,OS
+02/27/1983 09:56 PM,Super Cobra,37,Space Invaders,35,
+08/17/1984 05:41 AM,Donkey Kong Jr.,50,Space Invaders,20,
+04/09/1984 09:50 AM,Ms. Pac-Man,41,Defender,42,
+10/19/1983 02:01 AM,Missile Command,25,Jungle Hunt,1,
+05/15/1984 02:03 AM,Robotron: 2084,15,Dig Dug,26,OS
+03/07/1983 11:24 PM,Star Wars,46,Dig Dug,19,
+11/24/1984 12:58 AM,Robotron: 2084,22,Mr. Do!,29,
+11/10/1984 05:19 PM,Robotron: 2084,36,Super Cobra,8,
+10/22/1984 06:21 PM,Missile Command,19,Dig Dug,5,OS
+09/20/1984 07:21 AM,Star Wars,50,Asteroids,12,
+11/24/1983 01:30 AM,Donkey Kong Jr.,15,Ms. Pac-Man,2,OS
+02/02/1984 08:36 PM,Dig Dug,26,Dig Dug,34,
+06/06/1984 10:34 PM,Defender,27,Missile Command,2,
+11/04/1983 07:24 AM,Q*bert,17,Dragon's Lair,23,OS
+02/23/1983 05:14 AM,Galaxian,16,Pole Position,3,OS
+04/26/1983 10:06 AM,Star Wars,21,Donkey Kong Jr.,9,OS
+12/05/1984 11:55 AM,Centipede,24,Dig Dug,18,
+04/09/1983 06:17 AM,Battlezone,11,Jungle Hunt,2,
+09/22/1983 02:43 AM,Popeye,21,Stargate,48,
+08/17/1983 03:02 AM,Dig Dug,14,Defender,10,OS
+07/15/1984 09:57 PM,Pac-Man,9,Dragon's Lair,25,
+07/13/1984 09:59 AM,Space Duel,46,Berzerk,40,
+04/09/1984 07:46 PM,Mr. Do!,7,Dragon's Lair,11,OS
+03/25/1983 02:09 AM,Space Duel,46,Super Cobra,30,
+06/14/1983 07:59 PM,Stargate,38,Stargate,44,OS
+02/03/1983 12:30 AM,Missile Command,44,Pole Position,31,
+01/27/1984 09:14 PM,Stargate,39,Ms. Pac-Man,18,
+06/20/1983 07:44 AM,Centipede,48,Pole Position,12,OS
+05/21/1984 07:10 AM,Stargate,15,Tempest,2,
+11/09/1984 08:25 AM,Star Wars,22,Dragon's Lair,32,
+05/11/1983 06:38 AM,Asteroids,33,Ms. Pac-Man,5,
+11/11/1984 07:36 PM,Missile Command,2,Jungle Hunt,35,
+06/16/1984 03:49 PM,Ms. Pac-Man,3,Tempest,44,OS
+03/12/1984 02:48 PM,Battlezone,35,Space Invaders,7,
+11/24/1984 08:05 AM,Donkey Kong,40,Dig Dug,12,
+08/31/1983 03:52 PM,Pac-Man,2,Popeye,2,
+02/04/1983 12:39 AM,Battlezone,7,Tempest,41,OS
+10/16/1983 02:24 AM,Galaxian,6,Missile Command,40,
+09/02/1983 11:05 AM,Space Duel,12,Scramble,47,
+05/11/1983 10:15 PM,Berzerk,50,Asteroids,30,
+08/22/1984 08:55 PM,Tempest,50,Defender,7,
+12/14/1983 07:32 PM,Pole Position,39,Dragon's Lair,16,
+10/16/1983 11:38 AM,Space Duel,15,Battlezone,12,
+09/19/1984 08:08 PM,Q*bert,46,Battlezone,21,
+01/22/1984 04:15 AM,Tempest,37,Space Invaders,26,
+08/31/1984 11:25 PM,Battlezone,32,Pac-Man,23,
+11/01/1983 07:55 AM,Robotron: 2084,24,Missile Command,48,OS
+03/18/1983 11:15 AM,Pole Position,45,Defender,45,OS
+07/25/1983 10:48 AM,Space Duel,8,Stargate,29,
+01/18/1984 10:43 PM,Scramble,14,Q*bert,35,OS
+08/24/1984 04:19 AM,Space Duel,31,Q*bert,49,
+10/22/1983 12:16 AM,Dragon's Lair,36,Centipede,38,
+05/06/1983 10:08 PM,Jungle Hunt,42,Pole Position,14,
+07/09/1983 05:41 AM,Centipede,28,Defender,28,OS
+12/17/1983 03:47 AM,Stargate,50,Q*bert,14,OS
+07/19/1983 05:03 AM,Dragon's Lair,40,Tempest,21,OS
+05/14/1983 01:29 PM,Tempest,48,Stargate,42,OS
+07/23/1984 10:00 AM,Stargate,42,Dig Dug,38,
+10/26/1983 07:16 PM,Battlezone,33,Q*bert,22,OS
+06/24/1983 04:42 AM,Space Duel,22,Ms. Pac-Man,18,
+08/15/1984 03:38 AM,Ms. Pac-Man,32,Q*bert,16,
+05/26/1984 09:34 AM,Popeye,7,Q*bert,15,
+09/12/1983 01:19 PM,Centipede,8,Star Wars,34,
+04/19/1984 03:12 PM,Mr. Do!,1,Super Cobra,47,
+02/01/1983 12:38 AM,Missile Command,21,Space Invaders,37,
+07/20/1984 12:24 AM,Ms. Pac-Man,23,Scramble,12,
+04/27/1984 02:58 AM,Dig Dug,7,Defender,50,OS
+02/07/1983 09:17 AM,Defender,33,Popeye,4,OS
+03/29/1984 11:46 AM,Scramble,31,Ms. Pac-Man,25,
