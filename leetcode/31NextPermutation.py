@@ -37,7 +37,6 @@ class Solution:
         this_char = nums.pop(char_idx)
         return [this_char] + self.get_permutation(rank % factorial(n - 1), nums)
 
-
     def nextPermutation(self, nums):
         """
         :type nums: List[int]
@@ -45,10 +44,10 @@ class Solution:
         """
         rank = self.get_rank(nums)
         try:
-         return self.get_permutation(rank+1, sorted(nums))
+            return self.get_permutation(rank + 1, sorted(nums))
         except IndexError:
             return self.get_permutation(0, sorted(nums))
 
 
-input = [3,2,1]
+input = [3, 2, 1]
 print(Solution().nextPermutation(input))

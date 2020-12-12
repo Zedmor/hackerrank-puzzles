@@ -14,7 +14,7 @@ class Board:
         self.distance = self.calculate_distance()
 
     def __repr__(self):
-        # TODO refactor this method
+
         return ('\nBoard: \n{} \nDistance: {}\nFrom start:{}'.
                 format(np.matrix(self.board).reshape(4, 4),
                        self.getdistance(), self.distancefromstart))
@@ -114,8 +114,7 @@ def solver(board):
     while open:
         top = heapq.heappop(open)
         result = pushpositions(top, open, closed, distancesdict)
-        if result:
-            # todo Refactor when result found
+
             return result
         distancesdict[str(top.board)] = top.gettotaldistance()
         closed.append(top)

@@ -1,1 +1,13 @@
-[]
+[
+  "test_901.py::test_spanner[test_input0-expected0]",
+  "test_901.py::test_spanner[test_input1-expected1]",
+  "test_901.py::test_spanner[test_input2-expected2]",
+  "test_468.py::test_main_runner",
+  "test_468.py::test_ip4",
+  "test_468.py::test_ip6",
+  "test_circular_deque.py::test_import",
+  "test_circular_deque.py::test_empty",
+  "test_circular_deque.py::test_full",
+  "test_circular_deque.py::test_deletes",
+  "test_circular_deque.py::test_gets"
+]

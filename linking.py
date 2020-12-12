@@ -44,7 +44,7 @@ for chain in links:
         link_reverse_key = RPE.seller + RPE.buyer + RPE.key
         if link_key not in KVstore.keys():
             if link_reverse_key in KVstore.keys():
-                # What to do now? we found transaction with same buyer and seller and same psig
+                # What to  do now? we found transaction with same buyer and seller and same psig
                 # We substracted  it. Should we do it only in case of len of chain = 1 (one transaction)?
                 if len(chain) == 1:
                     KVstore[link_reverse_key].amount -= RPE.amount

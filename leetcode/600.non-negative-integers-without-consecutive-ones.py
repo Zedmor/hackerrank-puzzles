@@ -28,7 +28,7 @@
 #
 #
 """
->>> Solution().findIntegers(1000)
+>>> Solution().findIntegers(10000)
 4181
 """
 from math import log
@@ -60,16 +60,24 @@ class Solution:
             bin_rep = "{0:b}".format(n)
             if '11' not in bin_rep:
                 counter += 1
-                # local_counter += 1
             try:
                 math_calc = int(log(n) / log(2)) + 4
-                fib_calc = fibonacci(math_calc)
+                fibonacci(math_calc)
+                prev_calc = 2 ** (math_calc - 4) - 1
+
+                add_counter = 0
+                for i in range(prev_calc, n):
+                    bin_rep = "{0:b}".format(i)
+                    if '11' not in bin_rep:
+                        add_counter += 1
+                fib_calc = FibArray[prev_calc] + add_counter
+                print(f'N = {n}, naive: {counter}, fib: {fib_calc}')
             except ValueError:
                 fib_calc = 1
-            print(f'N = {n}, naive: {counter}, fib: {fib_calc}')
 
-        math_calc = int(log(num) / log(2)) + 4
-        return fibonacci(math_calc)
+
+        # math_calc = int(log(num) / log(2)) + 4
+        # return fibonacci(math_calc)
 
 
 

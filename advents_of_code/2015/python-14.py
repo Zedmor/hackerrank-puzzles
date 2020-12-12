@@ -78,8 +78,8 @@ def distance_calc(deer_record):
 
 
 def find_winner_deer(deers):
-    best_result = sorted(deers, key=attrgetter('distance'), reverse=True)[0].distance
-    return filter(lambda deer: deer.distance == best_result, deers)
+    best_result = sorted(deers, key=attrgetter('distance'), reverse=True)[0].a_star
+    return filter(lambda deer: deer.a_star == best_result, deers)
 
 
 def main():
