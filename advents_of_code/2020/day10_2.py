@@ -162,13 +162,9 @@ z = """1
 def solve(s):
     nums = list(map(int, s.split('\n')))
 
-    variants = 1
-
     target = max(nums) + 3
 
     nums = sorted([0] + nums + [target])
-
-    print(nums)
 
     dp = [-1] * len(nums)
 
@@ -191,7 +187,7 @@ def solve(s):
 @pytest.mark.parametrize(
     ('s', 'expected'),
     (
-            (m, 19208),
+            (l, 19208),
     ),
 )
 def test(s: str, expected: int) -> None:
