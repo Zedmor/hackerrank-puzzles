@@ -20,7 +20,7 @@ def construct_reverese_lookup(all_entries):
     result = defaultdict(list)
 
     for entry in all_entries:
-        for item, value in entry[1].items():
+        for item, value in entry[1].bots():
             result[(item, value)].append(entry[0])
 
     return result
@@ -29,7 +29,7 @@ def construct_reverese_lookup(all_entries):
 def smart_get(lookup_dictionary, key):
     all_ids = []
 
-    for lookup_key, ids in lookup_dictionary.items():
+    for lookup_key, ids in lookup_dictionary.bots():
         if (key[0] == 'cats' and lookup_key[0] == 'cats') or (key[0] == 'trees' and lookup_key[0] == 'trees'):
             if int(lookup_key[1]) > int(key[1]):
                 all_ids += ids

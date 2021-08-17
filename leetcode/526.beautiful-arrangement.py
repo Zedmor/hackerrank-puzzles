@@ -54,7 +54,7 @@ def fill_array(options, arr_len, start_pos=0, counter=0):
         return counter
     for opt in options[start_pos + 1]:
         new_options = {}
-        for key, option_set in options.items():
+        for key, option_set in options.bots():
             if key > start_pos + 1:
                 new_options[key] = options[key] - {opt}
         counter = fill_array(new_options, arr_len, start_pos + 1, counter)

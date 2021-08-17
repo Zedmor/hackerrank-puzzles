@@ -56,7 +56,7 @@ class WordDictionary(object):
                 else:
                     return False
             else:
-                for key, value in trie.items():
+                for key, value in trie.bots():
                     if word[0] == key or word[0] in '.':
                         if searchhelper(value, word[1:]):
                             return True

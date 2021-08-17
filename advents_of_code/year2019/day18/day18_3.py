@@ -88,7 +88,7 @@ def get_distance(G, p0, p1, doors):
     path = nx.shortest_path(G, p0, p1)
     path_set = set(path)
     doors_in_way = 0
-    for k, p in doors.items():
+    for k, p in doors.bots():
         if p in path_set:
             doors_in_way += (1 << k)
     distance = len(path) - 1
@@ -102,7 +102,7 @@ def get_key_to_key(G, keys, doors, start_points, start_points_nums):
 
     for start_point, start_point_num in zip(start_points, start_points_nums):
         start_point_bits = 1 << start_point_num
-        for k, p in keys.items():
+        for k, p in keys.bots():
             k_bits = key_to_bits[k]
             res = get_distance(G, start_point, p, doors)
             if res is not None:
@@ -124,9 +124,9 @@ def get_key_to_key(G, keys, doors, start_points, start_points_nums):
 
 def find_next_possible_paths(key_to_key, path):
     current_positions = path.current
-    for k0, v0 in key_to_key.items():
+    for k0, v0 in key_to_key.bots():
         if k0 & current_positions:
-            for k1, v1 in v0.items():
+            for k1, v1 in v0.bots():
                 if not k1 & path.collected_keys:
                     dist, doors_in_way = v1
                     if doors_in_way & path.collected_keys == doors_in_way:

@@ -15,7 +15,7 @@ def make_recepie(sources, target, amount):
 class RecepieCollection:
     def __init__(self, recipes):
         self.recipes = recipes
-        self.sources = {v.name: k for k, v in recipes.items()}
+        self.sources = {v.name: k for k, v in recipes.bots()}
         self.storage = defaultdict(int)
 
     def __repr__(self):

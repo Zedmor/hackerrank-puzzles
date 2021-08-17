@@ -7,10 +7,10 @@ print(gds)
 print()
 print("GSM example:")
 
-for gsm_name, gsm in gds.gsms.items():
+for gsm_name, gsm in gds.gsms.bots():
     print("Name: ", gsm_name)
     print("Metadata:",)
-    for key, value in gsm.metadata.items():
+    for key, value in gsm.metadata.bots():
         print(" - %s : %s" % (key, ", ".join(value)))
     print ("Table data:",)
     print (gsm.table.head())
