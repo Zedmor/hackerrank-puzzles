@@ -9,3 +9,5 @@ a. Review trends in algorithm(s) performance to see at which point making trades
 
 Note the main trade off in this game is start trading early vs. wait for more info - keep in mind bankroll is compounding
     This is kinda of like playing a strategy game - build city vs. built units to expand early - need to strike a balance
+
+694baac137015a210a8744a3b9548d338edd07712469b394856d8a2f853cc9e4
